@@ -10,17 +10,17 @@ import snap from "../Img/snap.png"
 class Post extends React.Component {
 
  myFunction = (e) => {
-   debugger
-   if(e.target.classList.contains("snap") !== true){
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
+  
   }
+
+  change = (e) => {
+    var shock = document.getElementById("shock")
+    shock.src = e.target.src
+    // debugger
   }
-  myFunction2 = (e) => {
-    debugger
-     var popup2 = document.getElementById("myPopup2");
-     popup2.classList.toggle("show");
-   }
+
 
   playVid = () => {
     var vid = document.getElementById("iframe");
@@ -57,11 +57,11 @@ class Post extends React.Component {
 
           </div>
           <div class="popup" onClick={(e)=>{this.myFunction(e)}}>
-          <img className = "reaction" src={shock} />
+          <img className = "reaction" id="shock" src={shock} />
   <span class="popuptext" id="myPopup">
-  <img className = "reaction snap" src={snap} onClick={(e)=>{this.myFunction2(e)}}/>
-  <img className = "reaction clap" src="https://www.pngrepo.com/download/54416/clap-hands.png" onClick={(e)=>{this.myFunction2(e)}}/>
-  <img className = "reaction praise" src="https://images.vexels.com/media/users/3/142288/isolated/preview/abf1a5a1f7cb224c91a61ce79eb15cbc-hand-gesture-praise-illustration-by-vexels.png" onClick={(e)=>{this.myFunction2(e)}}/>
+  <img className = "reaction snap" src={snap} onClick={(e)=>{this.change(e)}}/>
+  <img className = "reaction clap" src="https://www.pngrepo.com/download/54416/clap-hands.png" onClick={(e)=>{this.change(e)}}/>
+  <img className = "reaction praise" onClick={(e)=>{this.change(e)}} src="https://images.vexels.com/media/users/3/142288/isolated/preview/abf1a5a1f7cb224c91a61ce79eb15cbc-hand-gesture-praise-illustration-by-vexels.png"/>
 
   </span>
   </div>
