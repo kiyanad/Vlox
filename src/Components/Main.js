@@ -20,9 +20,36 @@ const  play = ['a','b','c','d','e','f','g',"h","i","j","k"].map(a => <Post />)
       <nav className ="navbar">
         <div className = "vlog">
         <p className = "stick"> |    </p>
-          <p className ="title">    VloX</p>
+          <p className ="title">    VloX</p><p className="min-title"> oxo </p>
         </div>
       </nav>
+      <div className = "sideBar">
+      <div className = "choiceContainer">
+      <h2 className ="choice">
+      Top
+      </h2>
+      </div>
+      <div className = "choiceContainer">
+      <h2 className ="choice">
+      Discover
+      </h2>
+      </div>
+      <div className = "choiceContainer">
+      <h2 className ="choice">
+      Todays Prompts
+      </h2>
+      </div>
+      <div className = "choiceContainer">
+      <h2 className ="choice">
+
+      </h2>
+      </div>
+      <div className = "choiceContainer">
+      <h2 className ="choice">
+      </h2>
+      </div>
+      </div>
+      <div className="white"/>
       <div className ="postsContainer">
         <div className = "posts">
         {play}

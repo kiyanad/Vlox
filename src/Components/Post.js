@@ -12,7 +12,7 @@ class Post extends React.Component {
  myFunction = (e) => {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
-  
+
   }
 
   change = (e) => {
@@ -66,14 +66,6 @@ class Post extends React.Component {
   </span>
   </div>
 
-  <div class="popup2" >
-  <span class="popuptext" id="myPopup2">
-  <img className = "reaction" src={shock} />
-
-
-  </span>
-
-</div>
         <p className="desc">  <b>KiyanaDunlock</b> How my Monday is going! #Great #MondayFunDay #MoMoneyMoMondays</p>
 
 

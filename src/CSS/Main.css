@@ -9,7 +9,7 @@
 .navbar{
   height: 5vw;
   width: 96vw;
-position: relative;
+  position: fixed;
 left: 2vw;
 border-bottom-style: double;
 
@@ -26,10 +26,12 @@ border-bottom-style: double;
 .posts{
   /* background: green; */
   height: 102vw;
-  width: 86vw;
-  position: relative;
-  left: 5vw;
+      width: 75vw;
+      position: relative;
+      left: 13vw;
   display: -webkit-inline-box;
+  top: 5vw;
+
 
 }
 
@@ -215,61 +217,6 @@ left: -37vw;
   to {opacity:1 ;}
 }
 
-/* Popup container */
-.popup2 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  top: -10vw;
-  /* background: green; */
-  left: -39vw;
-}
-
-/* The actual popup2 (appears on top) */
-.popup2 .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup2 .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup2 container (hide and show the popup) */
-.popup2 .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
 
 
 .clap{
@@ -281,4 +228,52 @@ left: -37vw;
 .praise{
   height: 3vw;
   margin-left: 1vw;
+}
+
+/* sidebar */
+.sideBar{
+  background: thistle;
+  height: auto;
+  float: left;
+  width: 25vw;
+  position: fixed;
+  z-index: 2;
+  top: 6vw;
+  left: 1vw;
+
+
+
+
+}
+
+.choiceContainer{
+  height: 5vw;
+  border-style: double;
+  text-align: -webkit-center;
+}
+
+.choice{
+  position: relative;
+  top: -1vw;
+  font-size: 2.5vw;
+
+}
+
+.white{
+  float: left;
+background: white;
+height: 49vw;
+width: 26vw;
+top: 9vw;
+position: fixed;
+z-index: 1;
+}
+
+.min-title{
+  font-size: 2vw;
+left: 1vw;
+position: relative;
+top: 2.5vw;
+font-family: MyFont;
+color: red;
 }
