@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../Font/Leo.otf')
+
+}
+
+
+/* Navbar */
+.navbar{
+  height: 5vw;
+  width: 96vw;
+position: relative;
+left: 2vw;
+border-bottom-style: double;
+
+}
+
+/* End */
+
+/* Posts */
+
+.postsContainer{
+  height: 83vw;
+}
+
+.posts{
+  /* background: green; */
+  height: 102vw;
+  width: 86vw;
+  position: relative;
+  left: 5vw;
+  display: -webkit-inline-box;
+
+}
+
+.post{
+  background: white;
+  height: 37%;
+  border-style: solid;
+  margin-top: 1vw;
+  border-width: 0.2vw;
+  margin-left: 1vw;
+  width: 50vw
+
+
+}
+
+/* End */
+
+/* Cloud */
+.cloud {
+  text-align: center;
+  box-sizing: border-box;
+  width: 41vw;
+  height: 34vw;
+  padding: 6vw 1em 0 1em;
+  margin: 1vw 5vw;
+  position: relative;
+  background-color: skyblue;
+  border-radius: 128% 111% 111% 121%;
+  z-index: 2;
+  top: 2vw;
+  left: 16vw;
+
+}
+
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  bottom  : 0;
+  z-index : -1;
+  background-color: skyblue;
+  border-radius: 100%;
+
+}
+
+.cloud::before {
+  width: 32vw;
+  height: 23vw;
+  left: -14vw;
+}
+
+.cloud::after {
+  width: 30vw;
+  height: 22vw;
+  right: -14vw;
+
+}
+/* End */
+
+/* Video Post */
+.videoContainer{
+  height: 23.1vw;
+  position: relative;
+  top: 3vw;
+  width: 36.7vw;
+  left: 6.3vw;
+
+}
+.videoOverlay{
+  background: white;
+  height: 23.1vw;
+  position: relative;
+  top: -23.4vw;
+  width: 36.7vw;
+  left: 0vw;
+  opacity: .3;
+}
+/* End */
+
+.desc{
+  position: relative;
+  top: -1vw;
+  font-size: 1.4vw;
+  left: -3vw;
+
+}
+
+.user{
+  position: relative;
+  right: 11vw;
+  top: 1vw;
+  font-size: 2.2vw;
+
+}
+
+#y{
+  opacity: .8;
+}
+
+.title{
+  font-family: "MyFont";
+  font-size: 3.3vw;
+  position: relative;
+left: 1vw;
+
+}
+
+.vlog{
+  display: flex;
+  position: relative;
+  top: -3vw;
+  left: 2vw;
+}
+.stick{
+  font-size: 5vw;
+position: relative;
+top: -3vw;
+}
+
+.reaction{
+  height: 3vw;
+position: relative;
+left: 16vw;
+
+
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  top: 1vw;
+/* background: green; */
+left: -37vw;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 15vw;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0vw;
+  margin-left: -80px;
+  top: -4vw;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* Popup container */
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  top: -10vw;
+  /* background: green; */
+  left: -39vw;
+}
+
+/* The actual popup2 (appears on top) */
+.popup2 .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup2 .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup2 container (hide and show the popup) */
+.popup2 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+.clap{
+  height: 2vw;
+  top: -0.4vw;
+  margin-left: 1vw;
+}
+
+.praise{
+  height: 3vw;
+  margin-left: 1vw;
+}

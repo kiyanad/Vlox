@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-visible": "^1.2.0",
+    "player.js": "^0.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-in-viewport": "^1.0.0-alpha.5",
+    "react-scripts": "3.0.0",
+    "react-video-recorder": "^3.7.0",
+    "react-visibility-sensor": "^5.0.2",
+    "react-youtube": "^7.9.0",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
