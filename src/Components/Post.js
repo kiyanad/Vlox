@@ -3,6 +3,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 import YouTube from 'react-youtube';
 import '../CSS/Reaction.css';
 import '../CSS/Popup.css';
+import '../CSS/Favorite.css';
 import shock from "../Img/image.png"
 import snap from "../Img/snap.png"
 
@@ -11,8 +12,9 @@ import snap from "../Img/snap.png"
 
 class Post extends React.Component {
   state = {
-    change: false
+    change: false,
   }
+
   componentDidUpdate(){
 // debugger
     const snap = document.querySelector(".snap")
@@ -56,6 +58,10 @@ class Post extends React.Component {
 
  myFunction = (e) => {
    e.target.parentElement.classList.toggle("hide")
+   const comment = document.querySelector(".comment");
+   comment.classList.toggle("hidden")
+
+
 // debugger
     var reaction = document.getElementById("shock");
     reaction.parentElement.innerHTML =
@@ -69,7 +75,7 @@ class Post extends React.Component {
     var pop = document.querySelector(".popup");
     pop.classList.toggle("hide")
     pop.classList.toggle("choosen")
-
+    debugger
 
     var shock = document.querySelector(".picks")
     var selected = new Image();
@@ -118,6 +124,29 @@ class Post extends React.Component {
     description.classList.toggle("view")
   }
 
+
+spiral = () => {
+  const fav = document.querySelector(".favoriteContainer")
+  fav.classList.toggle("vis")
+  // debugger
+}
+
+comment = () => {
+  setTimeout(()=>{
+    const   bubble1 = document.querySelector(".small1").classList.toggle("viewed")
+  },100)
+
+  setTimeout(()=>{
+    const  bubble2 = document.querySelector(".small2").classList.toggle("viewed")
+  },500)
+
+  setTimeout(()=>{
+  const  box = document.querySelector(".comment-text-box").classList.toggle("viewed")
+},1200)
+
+
+  debugger
+}
   render(){
 
     const opts = {
@@ -127,13 +156,29 @@ class Post extends React.Component {
         autoplay: 0
       }
     }
-
       return (
         <div className = "post">
         <h1 className="user">@KiyanaDunlock says...</h1>
-        <img className="spiral" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Double_spirale.svg/957px-Double_spirale.svg.png"/>
-        <div className="favorite">
+        <img className="spiral" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Double_spirale.svg/957px-Double_spirale.svg.png" onClick={this.spiral}/>
+        <div className="favoriteContainer">
+        <div className="favorite lil">
+          <p className="fav type"><img className="fav-pic" src="http://cdn.onlinewebfonts.com/svg/img_6033.png" /> Favorite </p>
         </div>
+        <div className="favorite">
+        <img className="rep-pic" src="https://i.ibb.co/BB0DhCp/image-4.png" />
+          <p className="rep type"> Report </p>
+        </div>
+        <div className="favorite">
+        <img className="save-pic" src="https://i.ibb.co/hC3KcLW/image-5.png" />
+
+          <p className="save type"> Save For Later </p>
+        </div>
+        <div className="favorite fav2">
+        <img className="hide-pic" src="https://i.ibb.co/4S0hg21/image-6.png" />
+          <p className="noMore type"> Hide This Topic </p>
+        </div>
+        </div>
+        <div className="back" />
           <div >
             <div className = "videoContainer">
             <VisibilitySensor onChange={this.view}>
@@ -148,15 +193,26 @@ class Post extends React.Component {
         </div>
 
           </div>
+          <div className="commentContainer">
+          <div className="small1" />
+          <div className="small2" />
+          <div className="comment-text-box" />
+
+
+          </div>
+          <div className ="postBottom">
+          <div className= "bottom-bar">
           <div class="popup" onClick={(e)=>{this.myFunction(e)}}>
           <img className = "reaction" id="shock" src={shock} />
 
+  </div>
+  <img className = "comment" src="https://img.icons8.com/metro/420/quote.png" onClick={this.comment}/>
   </div>
 <div className="break" />
         <p className="desc">  <b>KiyanaDunlock</b> How my Monday is going! #Great #MondayFunDay #MoMoneyMoMondays</p>
 
 
-
+</div>
         </div>
   );
 }

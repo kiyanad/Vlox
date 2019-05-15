@@ -1,5 +1,5 @@
 .setting{
-  left: 75vw;
+  left: 51vw;
 position: relative;
 
 }
@@ -8,10 +8,14 @@ position: relative;
   height: 4.5vw;
     top: 3vw;
     position: relative;
+    cursor: pointer;
+
 }
 
 .setting-name{
   font-size: 1.3vw;
 position: relative;
 top: -2vw;
+cursor: pointer;
+
 }

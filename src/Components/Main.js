@@ -5,6 +5,7 @@ import playerjs from "player.js"
 import ReactDOM from 'react-dom';
 import VisibilitySensor from 'react-visibility-sensor';
 import Post from "./Post"
+import bodymovin from "bodymovin"
 
 
 
@@ -13,6 +14,21 @@ import Post from "./Post"
 
 class Main extends React.Component {
 
+componentDidMount(){
+  var animData = {
+  wrapper: document.querySelector('#animationWindow'),
+  animType: 'svg',
+  loop: true,
+  prerender: true,
+  autoplay: true,
+  path: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/camera.json'
+};
+var anim = bodymovin.loadAnimation(animData);
+anim.setSpeed(.7);
+debugger
+
+
+}
 
 render(){
 const  play = ['a','b','c','d','e','f','g',"h","i","j","k"].map(a => <Post />)
@@ -20,8 +36,14 @@ const  play = ['a','b','c','d','e','f','g',"h","i","j","k"].map(a => <Post />)
     <div className = "mainPage">
       <nav className ="navbar">
         <div className = "vlog">
+        <div className = "logo">
         <p className = "stick"> |    </p>
           <p className ="title">    VloX</p><p className="min-title"> oxo </p>
+          </div>
+          <div id="animationWindow"/>
+          <div className="animation-circle" />
+          <div id="circle2" />
+
           <div className="setting"> <img className="think" src="http://www.clker.com/cliparts/w/s/e/l/i/L/cloud-no-back-ground-md.png"/> <p className="setting-name">KD</p> </div>
         </div>
       </nav>

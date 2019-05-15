@@ -1,6 +1,86 @@
 .favoriteContainer{
-  background: red;
-  height: 23vw;
+  background: white;
+  height: 17.4vw;
   position: relative;
-  width: 24vw;
+  width: 19vw;
+  left: 27vw;
+  z-index: 1;
+  visibility: hidden;
+  top: -1vw;
+  border-style: ridge;
+  overflow: hidden;
+  cursor: pointer;
+
+
+}
+
+.vis{
+  visibility: visible;
+}
+
+.favorite{
+  height: 4.5vw;
+  position: relative;
+    margin-top: -2vw;
+
+}
+
+.favorite:hover{
+  background: thistle
+}
+
+.type{
+  font-size: 2vw;
+  position: relative;
+  top: 0.5vw;
+}
+
+.rep, .save, .noMore{
+  border-top-style: ridge;
+  top: 0vw;
+padding-top: 1vw;
+    height: 4vw;
+
+}
+
+.lil{
+  height: 3vw;
+  padding-bottom: 1vw;
+
+}
+
+.fav2{
+  height: 5.3vw;
+}
+
+/* ICONS */
+.fav-pic{
+  height: 2vw;
+  position: relative;
+  top: .1vw;
+}
+
+.rep-pic{
+  height: 4vw;
+  position: relative;
+  top: 0.5vw;
+  float: left;
+  left: 4vw;
+
+}
+
+.save-pic{
+  height: 3vw;
+  float: left;
+  position: relative;
+  top: 1.3vw;
+  left: 1vw;
+}
+
+.hide-pic{
+  height: 3vw;
+  float: left;
+  position: relative;
+  top: 1vw;
+  left: 1vw;
 }

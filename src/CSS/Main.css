@@ -47,12 +47,20 @@ border-bottom-style: double;
 
 }
 
+.postBottom{
+  position: relative;
+  top: -59vw;
+}
+
 .spiral{
   height: 3vw;
 float: right;
 position: relative;
 bottom: 4vw;
 right: 2vw;
+cursor: pointer;
+
+
 }
 
 .break{
@@ -66,6 +74,31 @@ right: 2vw;
   top: .3vw;
 }
 
+.comment{
+  height: 3vw;
+position: relative;
+left: -20vw;
+top: 0.8vw;
+cursor: pointer;
+
+}
+
+.bottom-bar{
+  position: relative;
+  left: 2vw
+}
+
+.back{
+  position: relative;
+  bottom: 18vw;
+  width: 50vw;
+  background: yellowgreen;
+  height: 23vw;
+  background-image: url(https://thumbs.gfycat.com/IdleRespectfulDuiker-mobile.jpg);
+  background-size: 51vw 26vw;
+  background-position: -1vw -2vw;
+
+}
 /* End */
 
 /* Cloud */
@@ -115,7 +148,7 @@ right: 2vw;
 .videoContainer{
   height: 23.1vw;
   position: relative;
-  top: 1vw;
+  top: -40vw;
   width: 36.7vw;
   left: 6.3vw;
 
@@ -133,9 +166,9 @@ right: 2vw;
 
 .user{
   position: relative;
-  right: 11vw;
-  top: 1vw;
+  right: 0vw;
   font-size: 2.2vw;
+  width: 27vw;
 
 }
 
@@ -147,7 +180,9 @@ right: 2vw;
   font-family: "MyFont";
   font-size: 3.3vw;
   position: relative;
-left: 1vw;
+  left: -2vw;
+top: -12vw;
+
 
 }
 
@@ -155,12 +190,17 @@ left: 1vw;
   display: flex;
   position: relative;
   top: -3vw;
-  left: 2vw;
+  left: -2vw;
+  z-index: 10;
+  background: white;
+  height: 8vw;
+  width: 100vw;
 }
 .stick{
   font-size: 5vw;
 position: relative;
 top: -3vw;
+    left: -7vw;
 }
 
 
@@ -186,6 +226,8 @@ top: -3vw;
   height: 5vw;
   border-style: double;
   text-align: -webkit-center;
+  cursor: pointer;
+
 }
 
 .choice{
@@ -198,18 +240,67 @@ top: -3vw;
 .white{
   float: left;
 background: white;
-height: 49vw;
+height: 54vw;
 width: 26vw;
-top: 9vw;
+top: 5.2vw;
 position: fixed;
 z-index: 1;
 }
 
 .min-title{
   font-size: 2vw;
-left: 1vw;
+  left: 4vw;
 position: relative;
-top: 2.5vw;
+top: -17.9vw;
 font-family: MyFont;
 color: thistle;
+}
+
+.logo{
+width: 13vw;
+position: relative;
+left: 3vw;
+}
+
+/* https://codepen.io/adauto-dauto-oliveira/pen/mGmpNj?page=5 */
+
+#animationWindow {
+  width: 13vw;
+height: 6vw;
+position: relative;
+left: 35vw;
+top: 2.3vw;
+}
+
+.animation-circle, #circle2{
+  height: 4vw;
+  width: 6vw;
+  border-radius: 50%;
+  position: relative;
+  top: 3.3vw;
+  left: 25.4vw;
+  border-style: solid;
+  border-width: .06vw;
+}
+
+#circle2{
+  background: transparent;
+  left: 19.3vw;
+    border-width: 0vw;
+/* visibility: hidden; */
+}
+
+/* #animationWindow {
+ width: 800px;
+ height: 600px;
+ left:100px;
+ top:100px;
+ position:absolute;
+
+} */
+
+ svg{
+  width: 8vw;
+height: 100%;
+filter: brightness(0.4) sepia(1) hue-rotate(-115deg) saturate(9);
 }
