@@ -1,5 +1,6 @@
 import React from 'react';
 import '../CSS/Main.css';
+import '../CSS/Nav.css';
 import playerjs from "player.js"
 import ReactDOM from 'react-dom';
 import VisibilitySensor from 'react-visibility-sensor';
@@ -21,6 +22,7 @@ const  play = ['a','b','c','d','e','f','g',"h","i","j","k"].map(a => <Post />)
         <div className = "vlog">
         <p className = "stick"> |    </p>
           <p className ="title">    VloX</p><p className="min-title"> oxo </p>
+          <div className="setting"> <img className="think" src="http://www.clker.com/cliparts/w/s/e/l/i/L/cloud-no-back-ground-md.png"/> <p className="setting-name">KD</p> </div>
         </div>
       </nav>
       <div className = "sideBar">

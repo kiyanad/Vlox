@@ -1,0 +1,153 @@
+.reaction{
+  position: relative;
+
+}
+
+#shock{
+  height: 2vw;
+top: 0.3vw;
+
+}
+
+.snap{
+  height: 2vw;
+position: relative;
+
+
+}
+
+.clap{
+  height: 1.6vw;
+  top: 0.3vw;
+  margin-left: .5vw;
+  left: -.3vw;
+
+}
+
+.praise{
+  height: 2.2vw;
+
+}
+
+.faith{
+  height: 1.7vw;
+  top: 0.3vw;
+  margin-left: .5vw;
+  left: -.3vw;
+
+}
+
+.peace{
+  height: 1.9vw;
+  top: 0.3vw;
+  margin-left: .5vw;
+  left: -.3vw;
+
+}
+
+.rock{
+  height: 1.7vw;
+  top: 0.3vw;
+  margin-left: .5vw;
+  left: -.3vw;
+
+}
+
+.power{
+  height: 1.7vw;
+  top: 0.3vw;
+  margin-left: .5vw;
+  left: -.3vw;
+
+}
+
+.picks{
+  left: -3vw;
+  display: flex;
+  position: relative;
+}
+
+.circle{
+border-style: inset;
+border-radius: 50%;
+height: 2vw;
+width: 3.8vw;
+margin-left: 3vw;
+border-width: .2vw;
+background: seashell;
+
+
+
+}
+
+.circle:hover{
+  box-shadow: 1px 1px 5px yellow;
+  background: aliceblue
+
+}
+
+.clicked{
+  left: 3.3vw;
+  top: .4vw;
+}
+
+.clap.clicked{
+  top: .5vw;
+  height: 2vw;
+left: 3vw
+}
+
+.faith.clicked, .rock.clicked, .power.clicked{
+  left: 3vw;
+  top: .5vw;
+  height: 2vw;
+
+}
+
+.peace.clicked{
+  left: 2.9vw;
+  top: .5vw;
+  height: 2vw;
+}
+
+#clap, #snap, #praise, #faith, #peace, #rock, #power{
+  background: transparent;
+height: 3vw;
+width: 20vw;
+position: relative;
+top: -4.7vw;
+left: 4vw;
+z-index: 1;
+}
+
+#clap.view, #snap.view, #praise.view, #faith.view, #peace.view, #rock.view, #power.view{
+  background: white;
+height: 3vw;
+width: 21vw;
+position: relative;
+top: -4.7vw;
+left: 5vw;
+z-index: 1;
+-webkit-animation: fadeIn .7s;
+animation: fadeIn .7s
+}
+
+#clap.view{
+  top: -4.5vw
+}
+#praise.view{
+  top: -5vw
+}
+#peace.view, #rock.view, #power.view{
+  top: -4.7vw;
+left: -22vw;
+}
+
+.print{
+  position: relative;
+top: .5vw;
+font-family: MyFont;
+font-size: 2vw;
+width: 20vw;
+
+}

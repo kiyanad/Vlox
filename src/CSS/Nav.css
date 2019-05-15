@@ -1,0 +1,17 @@
+.setting{
+  left: 75vw;
+position: relative;
+
+}
+
+.think{
+  height: 4.5vw;
+    top: 3vw;
+    position: relative;
+}
+
+.setting-name{
+  font-size: 1.3vw;
+position: relative;
+top: -2vw;
+}
